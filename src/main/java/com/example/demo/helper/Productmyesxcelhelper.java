@@ -39,12 +39,14 @@ public class Productmyesxcelhelper {
       int rownum=0;
       Iterator<Row> iterator = sheet.iterator();
 
+
+
       while(iterator.hasNext())
       {
         Row row = iterator.next();
         if(rownum==0)
         {
-          rownum++;
+          rownum+=1;
           continue;
         }
         Iterator<Cell> cell = row.iterator();
